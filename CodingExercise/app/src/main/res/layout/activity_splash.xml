@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.SplashActivity">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical" android:padding="@dimen/padding_large"
+                  android:layout_marginTop="@dimen/padding_large"
+                  android:gravity="center_horizontal">
+
+        <TextView android:id="@+id/text_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_text_size"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingLeft="@dimen/padding_large"
+                android:textColor="@color/colorPrimaryDark"
+                  android:autoLink="web"
+        />
+
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btnOnlineMusic" android:text="@string/text_online_music"
+                android:textSize="@dimen/large_text_size"
+                style="@style/StartButton"
+                android:paddingBottom="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_large"
+                android:onClick="OnOnlineMusic"
+        />
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btnOfflineMusic" android:text="@string/text_offline_music"
+                android:textSize="@dimen/large_text_size"
+                style="@style/StartButton"
+                android:paddingBottom="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_large"
+                android:onClick="OnOfflineMusic"
+        />
+        <TextView android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_listen_to"
+                android:textSize="@dimen/medium_text_size"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+        />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
